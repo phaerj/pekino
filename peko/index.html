@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moltitudo — Ritual Beauty & Wellbeing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="hero fade-in" style="animation-delay: 0s">
+  <h1>Moltitudo</h1>
+  <p>Riscopri la bellezza come rituale.<br>Una connessione tra pelle, spirito e natura.</p>
+  <button onclick="document.getElementById('signup-email').focus()">Iscriviti alla newsletter</button>
+</header>
+
+<main>
+
+<section class="about container fade-in" style="animation-delay: 0.2s">
+  <h2 class="section-title">Chi siamo</h2>
+  <p>Moltitudo intreccia tradizioni ancestrali, botanica e spiritualità contemporanea. Creiamo ritual box, contenuti e percorsi per nutrire la tua pelle e la tua anima.</p>
+</section>
+
+<section class="diff container fade-in" style="animation-delay: 0.4s">
+  <div class="block">
+    <div class="icon">🌿</div>
+    <h3>Botanica & Tradizione</h3>
+    <p>Ingredienti naturali e rituali ispirati a conoscenze millenarie.</p>
+  </div>
+  <div class="block">
+    <div class="icon">🌙</div>
+    <h3>Oltre la Bellezza</h3>
+    <p>Esperienze che trasformano la routine in atti di consapevolezza.</p>
+  </div>
+  <div class="block">
+    <div class="icon">🖤</div>
+    <h3>Design Consapevole</h3>
+    <p>Packaging raffinato ed eco-consapevole, per un lusso etico.</p>
+  </div>
+</section>
+
+<section class="social container fade-in" style="animation-delay: 0.6s">
+  <p>Seguici su Instagram e TikTok per entrare nei nostri rituali quotidiani.</p>
+  <div class="icons">
+    <a href="https://instagram.com/moltitudo" target="_blank" rel="noopener">📸</a>
+    <a href="https://tiktok.com/@moltitudo" target="_blank" rel="noopener">🎵</a>
+  </div>
+</section>
+
+<section class="signup fade-in" style="animation-delay: 0.8s">
+  <h2 class="section-title" style="color:#FAF8F5;">Stay Connected</h2>
+  <p>Subscribe to receive rituals, exclusive previews and little beauty spells.</p>
+  <form onsubmit="alert('Thank you for subscribing!'); return false;">
+    <input type="email" id="signup-email" placeholder="Your email" required />
+    <label><input type="checkbox" required /> I agree to receive the ritual newsletter.</label>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<section class="quiz fade-in" style="animation-delay: 1s">
+  <h2 class="section-title">Find your personal ritual</h2>
+  <form id="ritualQuiz">
+    <fieldset>
+      <legend>1. What time of day do you feel most yourself?</legend>
+      <div class="options">
+        <label><input type="radio" name="q1" value="morning" required /> Quiet morning with tea</label>
+        <label><input type="radio" name="q1" value="afternoon" /> Busy creative afternoon</label>
+        <label><input type="radio" name="q1" value="evening" /> Soft slow evenings</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>2. Favorite scent?</legend>
+      <div class="options">
+        <label><input type="radio" name="q2" value="floral" required /> Jasmine & rose</label>
+        <label><input type="radio" name="q2" value="earthy" /> Moss & sandalwood</label>
+        <label><input type="radio" name="q2" value="citrus" /> Citrus & fresh herbs</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>3. Which style calls you?</legend>
+      <div class="options">
+        <label><input type="radio" name="q3" value="classic" required /> Timeless elegance</label>
+        <label><input type="radio" name="q3" value="boho" /> Free-spirited nature</label>
+        <label><input type="radio" name="q3" value="modern" /> Minimal contemporary</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>4. Choose a word:</legend>
+      <div class="options">
+        <label><input type="radio" name="q4" value="calm" required /> Serenity</label>
+        <label><input type="radio" name="q4" value="energy" /> Vitality</label>
+        <label><input type="radio" name="q4" value="dream" /> Dreamy</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>5. Your ideal ritual:</legend>
+      <div class="options">
+        <label><input type="radio" name="q5" value="bath" required /> Warm bath with oils</label>
+        <label><input type="radio" name="q5" value="mask" /> Facial mask & journaling</label>
+        <label><input type="radio" name="q5" value="meditation" /> Guided meditation</label>
+      </div>
+    </fieldset>
+    <button type="submit">Discover</button>
+    <div class="result" id="quizResult"></div>
+  </form>
+</section>
+
+<section class="faq container fade-in" style="animation-delay: 1.2s">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <details>
+    <summary>What products do you offer?</summary>
+    <p>We create ritual boxes with botanical blends, natural skincare and exclusive content for a holistic sensory journey.</p>
+  </details>
+  <details>
+    <summary>How does the subscription work?</summary>
+    <p>You can choose monthly plans with flexible options, and personalize your ritual to suit your mood and season.</p>
+  </details>
+  <details>
+    <summary>Are your products suitable for sensitive skin?</summary>
+    <p>Yes. Our formulas are gentle, tested on delicate skin types, crafted to respect your natural balance.</p>
+  </details>
+  <details>
+    <summary>Can I give it as a gift?</summary>
+    <p>Of course! Our boxes are beautifully packaged and come with optional gift notes to surprise someone special.</p>
+  </details>
+</section>
+
+<section class="contact container fade-in" style="animation-delay: 1.4s">
+  <p>Have questions or want to collaborate? <a href="mailto:info@moltitudo.it" class="btn-contact">Contact us</a></p>
+</section>
+
+</main>
+
+<footer>
+  &copy; 2025 Moltitudo. All rights reserved.
+  <button id="toggleLang" style="margin-left:1rem;">🇬🇧/🇮🇹</button>
+</footer>
+
+</body>
+</html>
