@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moltitudo — Ritual Beauty & Benessere</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero fade-in" role="banner" aria-label="Hero section">
+    <div class="lang-toggle-container">
+      <button id="langToggle" aria-label="Switch language to English" aria-pressed="false">EN</button>
+    </div>
+    <h1 data-lang="it">Moltitudo</h1>
+    <h1 data-lang="en" class="hidden">Moltitudo</h1>
+
+    <p data-lang="it">Riscopri la bellezza come rituale.<br>Una connessione tra pelle, spirito e natura.</p>
+    <p data-lang="en" class="hidden">Rediscover beauty as a ritual.<br>A connection between skin, spirit, and nature.</p>
+
+    <button onclick="document.getElementById('signup-email').focus()" aria-label="Iscriviti alla newsletter" data-lang="it">Iscriviti alla newsletter</button>
+    <button onclick="document.getElementById('signup-email').focus()" aria-label="Subscribe to newsletter" data-lang="en" class="hidden">Subscribe to newsletter</button>
+  </header>
+
+  <main>
+    <!-- Chi siamo / About -->
+    <section class="about container fade-in" aria-labelledby="about-title" tabindex="0">
+      <h2 id="about-title" class="section-title" data-lang="it">Chi siamo</h2>
+      <h2 id="about-title" class="section-title hidden" data-lang="en">About Us</h2>
+      <p data-lang="it">Moltitudo è un laboratorio di rituali di bellezza e benessere che intreccia tradizioni ancestrali, botanica e spiritualità contemporanea.<br>Creiamo ritual box, contenuti ed esperienze per portare meraviglia e connessione nella tua routine quotidiana.</p>
+      <p data-lang="en" class="hidden">Moltitudo is a laboratory of beauty and wellness rituals weaving ancestral traditions, botany, and contemporary spirituality.<br>We create ritual boxes, content, and experiences to bring wonder and connection into your daily routine.</p>
+    </section>
+
+    <!-- Differenziatori / Differentiators -->
+    <section class="diff container fade-in" aria-label="Cosa ci rende diversi" tabindex="0">
+      <div class="block" tabindex="0" aria-describedby="diff1-desc">
+        <div class="icon" aria-hidden="true">🌿</div>
+        <h3 data-lang="it">Botanica & Antiche Miscele</h3>
+        <h3 data-lang="en" class="hidden">Botany & Ancient Blends</h3>
+        <p id="diff1-desc" data-lang="it">Ingredienti naturali scelti con cura, ispirati da tradizioni millenarie.</p>
+        <p id="diff1-desc" data-lang="en" class="hidden">Carefully selected natural ingredients inspired by millenary traditions.</p>
+      </div>
+      <div class="block" tabindex="0" aria-describedby="diff2-desc">
+        <div class="icon" aria-hidden="true">🌙</div>
+        <h3 data-lang="it">Rituali per Anima e Corpo</h3>
+        <h3 data-lang="en" class="hidden">Rituals for Body & Soul</h3>
+        <p id="diff2-desc" data-lang="it">Esperienze sensoriali che nutrono l’interiorità oltre l’estetica.</p>
+        <p id="diff2-desc" data-lang="en" class="hidden">Sensory experiences that nourish the inner self beyond aesthetics.</p>
+      </div>
+      <div class="block" tabindex="0" aria-describedby="diff3-desc">
+        <div class="icon" aria-hidden="true">🖤</div>
+        <h3 data-lang="it">Design Sensoriale & Sostenibile</h3>
+        <h3 data-lang="en" class="hidden">Sensory & Sustainable Design</h3>
+        <p id="diff3-desc" data-lang="it">Packaging raffinato e eco-consapevole, che parla al cuore.</p>
+        <p id="diff3-desc" data-lang="en" class="hidden">Refined, eco-conscious packaging that speaks to the heart.</p>
+      </div>
+    </section>
+
+    <!-- Social -->
+    <section class="social container fade-in" aria-label="Seguici sui social" tabindex="0">
+      <p data-lang="it">Segui il nostro viaggio su Instagram e TikTok, scopri rituali quotidiani e dietro le quinte della nostra alchimia.</p>
+      <p data-lang="en" class="hidden">Follow our journey on Instagram and TikTok, discover daily rituals and behind the scenes of our alchemy.</p>
+      <div class="icons" role="list">
+        <a href="https://instagram.com/moltitudo" target="_blank" rel="noopener" aria-label="Instagram" role="listitem">📸</a>
+        <a href="https://tiktok.com/@moltitudo" target="_blank" rel="noopener" aria-label="TikTok" role="listitem">🎵</a>
+      </div>
+    </section>
+
+    <!-- Iscrizione / Signup -->
+    <section class="signup fade-in" aria-labelledby="signup-title" tabindex="0">
+      <h2 id="signup-title" class="section-title" data-lang="it" style="color:#FAF8F5;">Resta in contatto</h2>
+      <h2 id="signup-title" class="section-title hidden" data-lang="en" style="color:#FAF8F5;">Stay Connected</h2>
+      <p data-lang="it">Lascia la tua email per ricevere rituali, anteprime esclusive e piccoli incantesimi di bellezza.</p>
+      <p data-lang="en" class="hidden">Leave your email to receive rituals, exclusive previews, and little beauty spells.</p>
+      <form action="#" method="post" onsubmit="alert('Grazie per esserti iscritto!'); return false;">
+        <input type="email" id="signup-email" name="email" placeholder="La tua email" required aria-required="true" />
+        <label><input type="checkbox" name="privacy" required aria-required="true" /> <span data-lang="it">Sì, voglio ricevere la newsletter rituale.</span><span data-lang="en" class="hidden">Yes, I want to receive the ritual newsletter.</span></label>
+        <button type="submit" data-lang="it">Iscriviti</button>
+        <button type="submit" data-lang="en" class="hidden">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Quiz -->
+    <section class="quiz fade-in" aria-labelledby="quiz-title" tabindex="0">
+      <h2 id="quiz-title" class="section-title" data-lang="it">Scopri il tuo rituale personale</h2>
+      <h2 id="quiz-title" class="section-title hidden" data-lang="en">Discover Your Personal Ritual</h2>
+      <form id="ritualQuiz" aria-describedby="quiz-desc" aria-live="polite">
+        <p id="quiz-desc" style="font-style:italic; margin-bottom:1.5rem;" data-lang="it">Rispondi a queste domande per scoprire il rituale Moltitudo più adatto a te.</p>
+        <p id="quiz-desc" style="font-style:italic; margin-bottom:1.5rem;" data-lang="en" class="hidden">Answer these questions to find the Moltitudo ritual best suited for you.</p>
+
+        <!-- Q1 -->
+        <fieldset>
+          <legend data-lang="it">1. Qual è il tuo momento preferito della giornata?</legend>
+          <legend data-lang="en" class="hidden">1. What is your favorite time of day?</legend>
+          <div class="options">
+            <label><input type="radio" name="q1" value="calm" required /> <span data-lang="it">Alba calma e meditativa</span><span data-lang="en" class="hidden">Calm and meditative dawn</span></label>
+            <label><input type="radio" name="q1" value="energic" /> <span data-lang="it">Pomeriggio energico e dinamico</span><span data-lang="en" class="hidden">Energetic and dynamic afternoon</span></label>
+            <label><input type="radio" name="q1" value="relax" /> <span data-lang="it">Sera rilassante e raccolta</span><span data-lang="en" class="hidden">Relaxing and cozy evening</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Q2 -->
+        <fieldset>
+          <legend data-lang="it">2. Quale profumo ti attrae di più?</legend>
+          <legend data-lang="en" class="hidden">2. Which scent attracts you the most?</legend>
+          <div class="options">
+            <label><input type="radio" name="q2" value="floral" required /> <span data-lang="it">Gelsomino e rosa</span><span data-lang="en" class="hidden">Jasmine and rose</span></label>
+            <label><input type="radio" name="q2" value="woody" /> <span data-lang="it">Muschio e legno</span><span data-lang="en" class="hidden">Musk and wood</span></label>
+            <label><input type="radio" name="q2" value="fresh" /> <span data-lang="it">Agrumi e erbe fresche</span><span data-lang="en" class="hidden">Citrus and fresh herbs</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Q3 -->
+        <fieldset>
+          <legend data-lang="it">3. Quale stile ti rappresenta?</legend>
+          <legend data-lang="en" class="hidden">3. Which style represents you?</legend>
+          <div class="options">
+            <label><input type="radio" name="q3" value="classic" required /> <span data-lang="it">Eleganza senza tempo</span><span data-lang="en" class="hidden">Timeless elegance</span></label>
+            <label><input type="radio" name="q3" value="boho" /> <span data-lang="it">Spirito libero e naturale</span><span data-lang="en" class="hidden">Free and natural spirit</span></label>
+            <label><input type="radio" name="q3" value="modern" /> <span data-lang="it">Minimalismo contemporaneo</span><span data-lang="en" class="hidden">Contemporary minimalism</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Q4 -->
+        <fieldset>
+          <legend data-lang="it">4. Quale atmosfera preferisci per i tuoi rituali?</legend>
+          <legend data-lang="en" class="hidden">4. What atmosphere do you prefer for your rituals?</legend>
+          <div class="options">
+            <label><input type="radio" name="q4" value="nature" required /> <span data-lang="it">Foresta calma e profumata</span><span data-lang="en" class="hidden">Calm and fragrant forest</span></label>
+            <label><input type="radio" name="q4" value="urban" /> <span data-lang="it">Ambiente urbano moderno</span><span data-lang="en" class="hidden">Modern urban environment</span></label>
+            <label><input type="radio" name="q4" value="cozy" /> <span data-lang="it">Ambiente intimo e accogliente</span><span data-lang="en" class="hidden">Intimate and cozy setting</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Q5 -->
+        <fieldset>
+          <legend data-lang="it">5. Qual è il tuo approccio alla bellezza?</legend>
+          <legend data-lang="en" class="hidden">5. What is your approach to beauty?</legend>
+          <div class="options">
+            <label><input type="radio" name="q5" value="holistic" required /> <span data-lang="it">Unione di corpo, mente e spirito</span><span data-lang="en" class="hidden">Union of body, mind, and spirit</span></label>
+            <label><input type="radio" name="q5" value="pragmatic" /> <span data-lang="it">Soluzioni pratiche e funzionali</span><span data-lang="en" class="hidden">Practical and functional solutions</span></label>
+            <label><input type="radio" name="q5" value="experimental" /> <span data-lang="it">Sperimentazione e creatività</span><span data-lang="en" class="hidden">Experimentation and creativity</span></label>
+          </div>
+        </fieldset>
+
+        <button type="submit" aria-label="Scopri il tuo rituale" data-lang="it">Scopri</button>
+        <button type="submit" aria-label="Discover your ritual" data-lang="en" class="hidden">Discover</button>
+
+        <div class="result" id="quizResult" tabindex="0" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container fade-in" aria-labelledby="faq-title" tabindex="0">
+      <h2 id="faq-title" class="section-title" data-lang="it">Domande frequenti</h2>
+      <h2 id="faq-title" class="section-title hidden" data-lang="en">Frequently Asked Questions</h2>
+
+      <details>
+        <summary data-lang="it">Che tipo di prodotti offrite?</summary>
+        <summary data-lang="en" class="hidden">What kind of products do you offer?</summary>
+        <p data-lang="it">Creiamo ritual box con miscele botaniche, cosmetici naturali e contenuti esclusivi per un’esperienza multisensoriale.</p>
+        <p data-lang="en" class="hidden">We create ritual boxes with botanical blends, natural cosmetics, and exclusive content for a multisensory experience.</p>
+      </details>
+
+      <details>
+        <summary data-lang="it">Come funziona l’abbonamento?</summary>
+        <summary data-lang="en" class="hidden">How does the subscription work?</summary>
+        <p data-lang="it">Puoi scegliere tra diverse formule mensili, senza vincoli, con possibilità di personalizzazione.</p>
+        <p data-lang="en" class="hidden">You can choose from various monthly plans, no commitments, with customization options.</p>
+      </details>
+
+      <details>
+        <summary data-lang="it">È adatto a tutti i tipi di pelle?</summary>
+        <summary data-lang="en" class="hidden">Is it suitable for all skin types?</summary>
+        <p data-lang="it">Sì, i nostri prodotti sono formulati per rispettare ogni tipo di pelle, anche le più sensibili.</p>
+        <p data-lang="en" class="hidden">Yes, our products are formulated to respect every skin type, even the most sensitive.</p>
+      </details>
+
+      <details>
+        <summary data-lang="it">Come vengono scelti gli ingredienti?</summary>
+        <summary data-lang="en" class="hidden">How are the ingredients chosen?</summary>
+        <p data-lang="it">Selezioniamo solo ingredienti naturali di alta qualità, privilegiando la sostenibilità e le tradizioni ancestrali.</p>
+        <p data-lang="en" class="hidden">We select only high-quality natural ingredients, prioritizing sustainability and ancestral traditions.</p>
+      </details>
+
+      <details>
+        <summary data-lang="it">Quanto dura una ritual box?</summary>
+        <summary data-lang="en" class="hidden">How long does a ritual box last?</summary>
+        <p data-lang="it">La durata dipende dalla formula scelta, ma generalmente ogni box copre un mese di rituali quotidiani.</p>
+        <p data-lang="en" class="hidden">Duration depends on the chosen formula, but generally each box covers a month of daily rituals.</p>
+      </details>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container fade-in" aria-label="Contattaci" tabindex="0">
+      <p data-lang="it">Hai domande o vuoi collaborare? <a href="mailto:info@moltitudo.it" class="btn-contact" aria-label="Invia una email a Moltitudo">Contattaci</a></p>
+      <p data-lang="en" class="hidden">Do you have questions or want to collaborate? <a href="mailto:info@moltitudo.it" class="btn-contact" aria-label="Send an email to Moltitudo">Contact us</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Moltitudo. Tutti i diritti riservati.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
